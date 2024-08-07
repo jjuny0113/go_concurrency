@@ -1,8 +1,6 @@
 package main
 
-import (
-	SelectPrac "go_concurrency/thread/start"
-)
+import "go_concurrency/thread/turker"
 
 func main() {
 	//fmt.Println("main: main() start")
@@ -18,5 +16,17 @@ func main() {
 	//ManyThreadMainV1.PrintWorkExe()
 	//SelectPrac.InitSelectPrac()
 	//SelectPrac.Timeout()
-	SelectPrac.Default()
+	//SelectPrac.Default()
+
+	//SyncWaitGroup.DeferExam()
+	//SyncWaitGroup.Main()
+	//SyncWaitGroup.Wait()
+	//SyncWaitGroup.MainTask()
+	//context.ThreadStopMainV4()
+	//context.PrinterV3()
+	//context.Yield()
+	//turker.Print()
+	//turker.WaitGroup()
+	//turker.DeadLock()
+	turker.SeperatedArea()
 }
