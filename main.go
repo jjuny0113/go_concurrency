@@ -1,6 +1,6 @@
 package main
 
-import "go_concurrency/thread/channelAndContext"
+import "go_concurrency/thread/searchWord"
 
 func main() {
 
@@ -10,5 +10,6 @@ func main() {
 	//channelAndContext.Select()
 	//channelAndContext.Tick()
 	//channelAndContext.Factory()
-	channelAndContext.SquareFunc()
+	//channelAndContext.SquareFunc()
+	searchWord.InitV4()
 }
