@@ -1,6 +1,6 @@
 package main
 
-import "go_concurrency/thread/searchWord"
+import "go_concurrency/webServer"
 
 func main() {
 
@@ -11,5 +11,7 @@ func main() {
 	//channelAndContext.Tick()
 	//channelAndContext.Factory()
 	//channelAndContext.SquareFunc()
-	searchWord.InitV4()
+	//searchWord.InitV4()
+	//webServer.Init()
+	webServer.MuxInit()
 }
