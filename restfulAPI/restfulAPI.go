@@ -89,9 +89,9 @@ func deleteStudentHandler(w http.ResponseWriter, r *http.Request) {
 func makeWebHandler() http.Handler {
 	fmt.Println("init!!")
 	mux := mux.NewRouter()
-	mux.HandleFunc("/students", getStudentListHandler).Methods("GET")
-	mux.HandleFunc("/students/{id:[0-9]+}", getStudentHandler).Methods("GET")
-	mux.HandleFunc("/students", postStudentHandler).Methods("POST")
+	mux.HandleFunc("/students", getStudentListHandler).Methods(http.MethodGet)
+	mux.HandleFunc("/students/{id:[0-9]+}", getStudentHandler).Methods(http.MethodGet)
+	mux.HandleFunc("/students", postStudentHandler).Methods(http.MethodPost)
 	mux.HandleFunc("/students/{id:[0-9]+}", deleteStudentHandler).Methods(http.MethodDelete)
 
 	students = make(map[int]Student)

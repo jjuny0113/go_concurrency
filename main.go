@@ -1,8 +1,8 @@
 package main
 
-import "go_concurrency/restfulAPI"
+import "go_concurrency/todoList"
 
 func main() {
 
-	restfulAPI.Init()
+	todoList.Init()
 }
