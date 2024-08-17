@@ -1,8 +1,13 @@
 package main
 
-import "go_concurrency/todoList"
+import "go_concurrency/advanced"
 
 func main() {
 
-	todoList.Init()
+	//advanced.Init()
+	//advanced.CountNum()
+	//advanced.Pointer()
+	//advanced.ArrAndSlicePointer()
+	//advanced.CallByCopy()
+	advanced.DeepDivePointer()
 }
